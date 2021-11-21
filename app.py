@@ -4,7 +4,7 @@ from flask import render_template
 import main
 import CoinGeckoAPI as cg
 app = Flask(__name__)
-
+#hello
 @app.route("/")
 @app.route("/home")
 def home():
