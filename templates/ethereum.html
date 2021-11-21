@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block body_content %}
+<div class = "mydiv">
+      <h1>
+          ETHEREUM
+      </h1>
+      <img src="{{url_for('static', filename='ethereum.png')}}" class = "img1" height = "120px" />
+      <p>
+        
+            Ethereum is a decentralized, open-source blockchain with smart contract functionality. Ether (ETH or Ξ)
+            is the native cryptocurrency of the platform. Amongst cryptocurrencies, Ether is second only to Bitcoin in 
+            market capitalization. Ethereum was conceived in 2013 by programmer Vitalik Buterin. In 2014,
+            development work commenced and was crowdfunded, and the network went live on 30 July 2015. The 
+            platform allows anyone to deploy permanent and immutable decentralized applications onto it, with 
+            which users can interact.
+         
+      </p>
+  </div>
+  <canvas id="line-chart" width="800" height="450"></canvas>
+    <script>
+      new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: {{ labels }},
+    datasets: [{ 
+        data: {{ values }},
+        label: "Ethereum",
+        borderColor: "#3e95cd",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Ethereum Price'
+    }
+  }
+});
+    </script>
+<div class = "mydiv">
+    <button onclick="LinearFunction()">Predict with Multiple Linear Regression</button>
+    <p id = "button1"></p>
+    <button onclick="RandomFunction()">Predict with Random Forrest</button>
+    <p id = "button2"></p>
+    <button onclick="RidgeFunction()">Predict with Ridge Regression</button>
+    <p id = "button3"></p>
+    <button onclick="AverageFunction()">Average Prediction</button>
+    <p id = "button4"></p>
+    <script>
+        function LinearFunction() {
+  document.getElementById("button1").innerHTML = '{{ var[0] }}';    
+                }
+        function RandomFunction() {
+  document.getElementById("button2").innerHTML = '{{ var[1] }}';    
+                }
+        function RidgeFunction() {
+  document.getElementById("button3").innerHTML = '{{ var[2] }}';    
+                }
+        function AverageFunction() {
+  document.getElementById("button4").innerHTML = '{{ var[3] }}';    
+                }
+</script>
+</div>
+
+{% endblock body_content %}

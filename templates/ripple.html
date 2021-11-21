@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block body_content %}
+<div class = "mydiv">
+    <h1>
+        RIPPLE
+    </h1>
+    <img src="{{url_for('static', filename='ripple.png')}}" class = "img1" height = "120px" />
+    <p>
+      
+        Ripple is a real-time gross settlement system, currency exchange and remittance network created by Ripple
+        Labs Inc., a US-based technology company. Released in 2012, Ripple is built upon a distributed open source
+        protocol, and supports tokens representing fiat currency, cryptocurrency, commodities, or other units of
+        value such as frequent flier miles or mobile minutes. Ripple purports to enable "secure, instantly and 
+        nearly free global financial transactions of any size with no chargebacks." The ledger employs the native 
+        cryptocurrency known as XRP.
+       
+    </p>
+</div>
+<canvas id="ripple-chart" width="800" height="450"></canvas>
+    <script>
+      new Chart(document.getElementById("ripple-chart"), {
+  type: 'line',
+  data: {
+    labels: {{ labels }},
+    datasets: [{ 
+        data: {{ values }},
+        label: "Ripple",
+        borderColor: "#3e95cd",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Ripple Price'
+    }
+  }
+});
+    </script>
+<div class = "mydiv">
+    <button onclick="LinearFunction()">Predict with Multiple Linear Regression</button>
+    <p id = "button1"></p>
+    <button onclick="RandomFunction()">Predict with Random Forrest</button>
+    <p id = "button2"></p>
+    <button onclick="RidgeFunction()">Predict with Ridge Regression</button>
+    <p id = "button3"></p>
+    <button onclick="AverageFunction()">Average Prediction</button>
+    <p id = "button4"></p>
+    <script>
+        function LinearFunction() {
+  document.getElementById("button1").innerHTML = '{{ var[0] }}';    
+                }
+        function RandomFunction() {
+  document.getElementById("button2").innerHTML = '{{ var[1] }}';    
+                }
+        function RidgeFunction() {
+  document.getElementById("button3").innerHTML = '{{ var[2] }}';    
+                }
+        function AverageFunction() {
+  document.getElementById("button4").innerHTML = '{{ var[3] }}';    
+                }
+</script>
+</div>
+
+{% endblock body_content %}

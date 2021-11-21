@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block body_content %}
+<div class = "mydiv">
+      <h1>
+          DOGECOIN
+      </h1>
+      <img src="{{url_for('static', filename='dogecoin.png')}}" class = "img1" height = "120px" />
+      <p>
+            Dogecoin is a cryptocurrency created by software engineers Billy Markus and Jackson Palmer, who decided
+            to create a payment system as a "joke", making fun of the wild speculation in cryptocurrencies at the 
+            time. Despite its satirical nature, some consider it a legitimate investment prospect. Dogecoin features 
+            the face of the Shiba Inu dog from the "Doge" meme as its logo and namesake. It was introduced on December
+            6, 2013, and quickly developed its own online community, reaching a market capitalization of over $85
+            billion on May 5, 2021. It is the current shirt sponsor (sleeve only) of Premier League club Watford.
+                 
+      </p>
+  </div>
+  <canvas id="line-chart" width="800" height="450"></canvas>
+    <script>
+      new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: {{ labels }},
+    datasets: [{ 
+        data: {{ values }},
+        label: "Dogecoin",
+        borderColor: "#3e95cd",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Dogecoin Price'
+    }
+  }
+});
+    </script>
+<div class = "mydiv">
+    <button onclick="LinearFunction()">Predict with Multiple Linear Regression</button>
+    <p id = "button1"></p>
+    <button onclick="RandomFunction()">Predict with Random Forrest</button>
+    <p id = "button2"></p>
+    <button onclick="RidgeFunction()">Predict with Ridge Regression</button>
+    <p id = "button3"></p>
+    <button onclick="AverageFunction()">Average Prediction</button>
+    <p id = "button4"></p>
+    <script>
+        function LinearFunction() {
+  document.getElementById("button1").innerHTML = '{{ var[0] }}';    
+                }
+        function RandomFunction() {
+  document.getElementById("button2").innerHTML = '{{ var[1] }}';    
+                }
+        function RidgeFunction() {
+  document.getElementById("button3").innerHTML = '{{ var[2] }}';    
+                }
+        function AverageFunction() {
+  document.getElementById("button4").innerHTML = '{{ var[3] }}';    
+                }
+</script>
+</div>
+
+{% endblock body_content %}

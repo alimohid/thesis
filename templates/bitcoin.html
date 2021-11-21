@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+{% block body_content %}
+<div class = "mydiv">
+    <h1>
+        BITCOIN
+    </h1>
+    <img src="{{url_for('static', filename='bitcoin.png')}}" class = "img1" height = "120px" />
+    <p>
+      
+        Bitcoin (₿) is a decentralized digital currency, without a central bank or single administrator,
+        that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries.
+        Transactions are verified by network nodes through cryptography and recorded in a public distributed
+        ledger called a blockchain. The cryptocurrency was invented in 2008 by an unknown person or group of
+        people using the name Satoshi Nakamoto. The currency began use in 2009 when its implementation was
+        released as open-source software.
+       
+    </p>
+</div>
+<div id = "mydiv">
+    <canvas id="line-chart" width="800" height="450"></canvas>
+    <script>
+      new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: {{ labels }},
+    datasets: [{ 
+        data: {{ values }},
+        label: "Bitcoin",
+        borderColor: "#3e95cd",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Bitcoin Price'
+    },
+    
+  }
+});
+    </script>
+</div>
+<div class = "mydiv">
+    <button onclick="LinearFunction()" >Predict with Multiple Linear Regression</button>
+    <p id = "button1"></p>
+    <button onclick="RandomFunction()">Predict with Random Forrest</button>
+    <p id = "button2"></p>
+    <button onclick="RidgeFunction()">Predict with Ridge Regression</button>
+    <p id = "button3"></p>
+    <button onclick="AverageFunction()">Average Prediction</button>
+    <p id = "button4"></p>
+    <script>
+        function LinearFunction() {
+  document.getElementById("button1").innerHTML = '{{ var[0] }}';    
+                }
+        function RandomFunction() {
+  document.getElementById("button2").innerHTML = '{{ var[1] }}';    
+                }
+        function RidgeFunction() {
+  document.getElementById("button3").innerHTML = '{{ var[2] }}';    
+                }
+        function AverageFunction() {
+  document.getElementById("button4").innerHTML = '{{ var[3] }}';    
+                }
+</script>
+</div>
+{% endblock body_content %}

@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block body_content %}
+<div class = "mydiv">
+      <h1>
+          CARDANO
+      </h1>
+      <img src="{{url_for('static', filename='cardano.png')}}" class = "img1" height = "120px" />
+      <p>
+        
+            Cardano is a public blockchain platform. It is open-source and decentralized, with consensus
+            achieved using proof of stake. It can facilitate peer-to-peer transactions with its internal 
+            cryptocurrency, Ada. Cardano was founded in 2015 by Ethereum co-founder Charles Hoskinson. 
+            The development of the project is overseen and supervised by the Cardano Foundation based in Zug,
+            Switzerland. It is the largest cryptocurrency to use a proof-of-stake blockchain, which is seen as
+            a greener alternative to proof-of-work protocols.
+         
+      </p>
+  </div>
+  <canvas id="line-chart" width="800" height="450"></canvas>
+    <script>
+      new Chart(document.getElementById("line-chart"), {
+  type: 'line',
+  data: {
+    labels: {{ labels }},
+    datasets: [{ 
+        data: {{ values }},
+        label: "Cardano",
+        borderColor: "#3e95cd",
+        fill: false
+      }
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      text: 'Cardano Price'
+    }
+  }
+});
+    </script>
+<div class = "mydiv">
+    <button onclick="LinearFunction()">Predict with Multiple Linear Regression</button>
+    <p id = "button1"></p>
+    <button onclick="RandomFunction()">Predict with Random Forrest</button>
+    <p id = "button2"></p>
+    <button onclick="RidgeFunction()">Predict with Ridge Regression</button>
+    <p id = "button3"></p>
+    <button onclick="AverageFunction()">Average Prediction</button>
+    <p id = "button4"></p>
+    <script>
+        function LinearFunction() {
+  document.getElementById("button1").innerHTML = '{{ var[0] }}';    
+                }
+        function RandomFunction() {
+  document.getElementById("button2").innerHTML = '{{ var[1] }}';    
+                }
+        function RidgeFunction() {
+  document.getElementById("button3").innerHTML = '{{ var[2] }}';    
+                }
+        function AverageFunction() {
+  document.getElementById("button4").innerHTML = '{{ var[3] }}';    
+                }
+</script>
+</div>
+{% endblock body_content %}

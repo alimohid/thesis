@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block body_content %}
+<div class = "mydiv">
+	<h1>Introduction</h1>
+	<p>The purpose of this project is to predict the prices of top 5 cryptocurrencies for the next day using 
+		machine leanring algorithms such as Random Forest, Ridge Regression and Multiple Linear Regression.
+		This web based application has been developed using the Python's framework flask along with HTML, CSS
+		and JavaScript. Using this web based application you can toggle between different cryptocurrencies and 
+		check their prediciton for tomorrow using mentioned algorithms. Three factors have been analysed for predicting
+		the price and these factors are; weekly moving average, monthly moving average and daily time. Data for these factors
+		have been obtaied from the website CoinGecko.
+	</p>
+</div>
+<button class="accordion">Multiple Linear Regression</button>
+<div class="panel">
+  <p class = "accordionPara">
+    Multiple linear regression (MLR), also known simply as multiple regression, is a statistical technique that uses several explanatory variables to predict the outcome of a response variable. Multiple regression is an extension of linear (OLS) regression that uses just one explanatory variable.
+  </p>
+  </div>
+
+<button class="accordion">Ridge Regression</button>
+<div class="panel">
+  <p class = "accordionPara">
+    Ridge regression is a method of estimating the coefficients of multiple-regression models in scenarios where independent variables are highly correlated. It has uses in fields including econometrics, chemistry, and engineering.
+
+The theory was first introduced by Hoerl and Kennard in 1970 in their Technometrics papers “RIDGE regressions: biased estimation of nonorthogonal problems” and “RIDGE regressions: applications in nonorthogonal problems”. This was the result of ten years of research into the field of ridge analysis.
+  </p>
+</div>
+
+<button class="accordion">Random Forrest</button>
+<div class="panel">
+<p class = "accordionPara">
+  Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks that operates by constructing a multitude of decision trees at training time. For classification tasks, the output of the random forest is the class selected by most trees.
+</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+</script>
+{% endblock body_content %}

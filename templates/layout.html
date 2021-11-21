@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% if title %}
+			<title>Crypto Prediction-{{ title }}</title>
+		{% else %}
+			<title>Crypto Prediction</title>
+		{% endif %}
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	</head>
+	<body>
+		<div class="topnav" id="myTopnav">
+			<a href="home" class="active">Home</a>
+			<a href="bitcoin" >Bitcoin</a>
+			<a href="ethereum">Ethereum</a>
+			<a href="cardano">Cardano</a>
+			<a href="dogecoin">Dogecoin</a>
+			<a href="ripple">Ripple</a>
+			<a href="{{ url_for('static', filename='javascript/script.js') }}" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+				x.className += " responsive";
+				} else {
+				x.className = "topnav";
+				}
+			}
+		</script>
+	    {% block body_content %}{% endblock %}
+        <footer>
+            <p>Author: Mohid Ali<br>
+                 Neptun: A2TK3S<br>
+            <a href="mohidaliaamir.maa@gmail.com">mohidaliaamir.maa@gmail.com</a></p>
+        </footer>
+    </body>
+</html>
