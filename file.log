@@ -1,24 +1,24 @@
-2021-11-21 21:22:32,990 Date and time for prediction: 2021-11-21 01:00:00
-2021-11-21 21:22:33,016 Bitcoin Predicition by Linear Regression: 61735.78530352664
-2021-11-21 21:22:33,087 Bitcoin Predicition by Random Forest: 61994.47639772337
-2021-11-21 21:22:33,096 Bitcoin Predicition by Ridge Regression: 61803.296685073765
-2021-11-21 21:22:33,106 Mean Bitcoin prediction: 61844.51946210792
-2021-11-21 21:22:33,204 Cardano Predicition by Linear Regression: 1.943095713268801
-2021-11-21 21:22:33,206 Cradano Predicition by Random Forrest: 2.0620689120617546
-2021-11-21 21:22:33,209 Cardano Predicition by Ridge Regression: 1.9088986337490363
-2021-11-21 21:22:33,217 Mean cardano Predicition : 1.9713544196931974
-2021-11-21 21:22:33,316 Ethereum Predicition by Linear Regression: 4403.96203171404
-2021-11-21 21:22:33,320 Ethereum Predicition by Random Forrest: 4399.111658134785
-2021-11-21 21:22:33,323 Ethereum Predicition by Ridge Regression: 4409.295070847962
-2021-11-21 21:22:33,331 Mean Ethereum Predicition : 4404.122920232262
-2021-11-21 21:22:33,439 Dogecoin Predicition by Linear Regression: 0.2459564323707399
-2021-11-21 21:22:33,444 Dogecoin Predicition by Random Forrest: 0.2448202045484853
-2021-11-21 21:22:33,446 Dogecoin Predicition by Ridge Regression: 0.1654942357241708
-2021-11-21 21:22:33,453 Mean Dogecoin Predicition : 0.21875695754779867
-2021-11-21 21:22:33,557 Ripple Predicition by Linear Regression: 1.1067717383687639
-2021-11-21 21:22:33,562 Ripple Predicition by Random Forrest: 1.1084469985687238
-2021-11-21 21:22:33,564 Ripple Predicition by Ridge Regression: 1.0491238725712104
-2021-11-21 21:22:33,570 Mean Ripple Predicition : 1.0881142031695659
-2021-11-21 21:22:33,600  * Debugger is active!
-2021-11-21 21:22:33,707  * Debugger PIN: 124-086-371
-2021-11-21 21:22:34,408  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-11-21 21:30:53,121 Date and time for prediction: 2021-11-21 01:00:00
+2021-11-21 21:30:53,178 Bitcoin Predicition by Linear Regression: 61735.78530352664
+2021-11-21 21:30:53,501 Bitcoin Predicition by Random Forest: 61994.47639772337
+2021-11-21 21:30:53,509 Bitcoin Predicition by Ridge Regression: 61803.296685073765
+2021-11-21 21:30:53,525 Mean Bitcoin prediction: 61844.51946210792
+2021-11-21 21:30:53,685 Cardano Predicition by Linear Regression: 1.943095713268801
+2021-11-21 21:30:53,691 Cradano Predicition by Random Forrest: 2.0620689120617546
+2021-11-21 21:30:53,693 Cardano Predicition by Ridge Regression: 1.9088986337490363
+2021-11-21 21:30:53,702 Mean cardano Predicition : 1.9713544196931974
+2021-11-21 21:30:53,818 Ethereum Predicition by Linear Regression: 4403.96203171404
+2021-11-21 21:30:53,824 Ethereum Predicition by Random Forrest: 4399.111658134785
+2021-11-21 21:30:53,826 Ethereum Predicition by Ridge Regression: 4409.295070847962
+2021-11-21 21:30:53,835 Mean Ethereum Predicition : 4404.122920232262
+2021-11-21 21:30:53,951 Dogecoin Predicition by Linear Regression: 0.2459564323707399
+2021-11-21 21:30:53,957 Dogecoin Predicition by Random Forrest: 0.2448202045484853
+2021-11-21 21:30:53,959 Dogecoin Predicition by Ridge Regression: 0.1654942357241708
+2021-11-21 21:30:53,967 Mean Dogecoin Predicition : 0.21875695754779867
+2021-11-21 21:30:54,083 Ripple Predicition by Linear Regression: 1.1067717383687639
+2021-11-21 21:30:54,090 Ripple Predicition by Random Forrest: 1.1084469985687238
+2021-11-21 21:30:54,092 Ripple Predicition by Ridge Regression: 1.0491238725712104
+2021-11-21 21:30:54,101 Mean Ripple Predicition : 1.0881142031695659
+2021-11-21 21:30:54,320  * Debugger is active!
+2021-11-21 21:30:54,563  * Debugger PIN: 124-086-371
+2021-11-21 21:30:57,180  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

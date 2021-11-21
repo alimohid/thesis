@@ -116,7 +116,6 @@ dates = []
 for date in all_the_dates:
     date = dt.fromtimestamp(date/1000)
     date = date.strftime("%m/%d/%Y")
-    print(date)
     dates.append(date)
 # %%
 # %%

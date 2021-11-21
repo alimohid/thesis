@@ -4,7 +4,7 @@ from flask import render_template
 import main
 import CoinGeckoAPI as cg
 app = Flask(__name__)
-#hello
+
 @app.route("/")
 @app.route("/home")
 def home():
@@ -36,4 +36,4 @@ def ripple():
     values = cg.xrpDataFrame['Price'].values.tolist()
     return render_template('ripple.html',title='Ripple', var = main.xrp_prediction_list,labels=labels,values=values)    
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0")
