@@ -16,7 +16,7 @@
        
     </p>
 </div>
-<div id = "mydiv">
+<div id = "mydiv"></div>
     <canvas id="line-chart" width="800" height="450"></canvas>
     <script>
       new Chart(document.getElementById("line-chart"), {
@@ -36,11 +36,30 @@
       display: true,
       text: 'Bitcoin Price'
     },
-    
-  }
+    scales: {
+        xAxes: [ {
+            ticks: {
+                maxTicksLimit: 20
+            },
+            display: true,
+            type: 'time',
+            time: {
+              parser: 'MM/DD/YYYY HH:mm',
+              tooltipFormat: 'll HH:mm',
+              unit: 'day',
+              unitStepSize: 1,
+              displayFormats: {
+                'day': 'MM/DD/YYYY'
+              }
+            }
+          }
+        ]
+      }
+  
+}
 });
     </script>
-</div>
+
 <div class = "mydiv">
     <button onclick="LinearFunction()" >Predict with Multiple Linear Regression</button>
     <p id = "button1"></p>

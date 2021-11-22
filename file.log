@@ -1,25 +1,41 @@
-2021-11-21 21:30:53,121 Date and time for prediction: 2021-11-21 01:00:00
-2021-11-21 21:30:53,178 Bitcoin Predicition by Linear Regression: 61735.78530352664
-2021-11-21 21:30:53,501 Bitcoin Predicition by Random Forest: 61994.47639772337
-2021-11-21 21:30:53,509 Bitcoin Predicition by Ridge Regression: 61803.296685073765
-2021-11-21 21:30:53,525 Mean Bitcoin prediction: 61844.51946210792
-2021-11-21 21:30:53,685 Cardano Predicition by Linear Regression: 1.943095713268801
-2021-11-21 21:30:53,691 Cradano Predicition by Random Forrest: 2.0620689120617546
-2021-11-21 21:30:53,693 Cardano Predicition by Ridge Regression: 1.9088986337490363
-2021-11-21 21:30:53,702 Mean cardano Predicition : 1.9713544196931974
-2021-11-21 21:30:53,818 Ethereum Predicition by Linear Regression: 4403.96203171404
-2021-11-21 21:30:53,824 Ethereum Predicition by Random Forrest: 4399.111658134785
-2021-11-21 21:30:53,826 Ethereum Predicition by Ridge Regression: 4409.295070847962
-2021-11-21 21:30:53,835 Mean Ethereum Predicition : 4404.122920232262
-2021-11-21 21:30:53,951 Dogecoin Predicition by Linear Regression: 0.2459564323707399
-2021-11-21 21:30:53,957 Dogecoin Predicition by Random Forrest: 0.2448202045484853
-2021-11-21 21:30:53,959 Dogecoin Predicition by Ridge Regression: 0.1654942357241708
-2021-11-21 21:30:53,967 Mean Dogecoin Predicition : 0.21875695754779867
-2021-11-21 21:30:54,083 Ripple Predicition by Linear Regression: 1.1067717383687639
-2021-11-21 21:30:54,090 Ripple Predicition by Random Forrest: 1.1084469985687238
-2021-11-21 21:30:54,092 Ripple Predicition by Ridge Regression: 1.0491238725712104
-2021-11-21 21:30:54,101 Mean Ripple Predicition : 1.0881142031695659
-2021-11-21 21:30:54,320  * Debugger is active!
-2021-11-21 21:30:54,563  * Debugger PIN: 124-086-32021-11-21 21:37:24,821  * Restarting with stat
-127.0.0.1:5000/ (Press CTRL+C to quit)
-2021-11-21 21:37:23,857  * Detected change in 'E:\\THESIS 2.0\\flask\\app.py', reloading
+2021-11-22 10:55:16,366 Date and time for prediction: 2021-11-22 01:00:00
+2021-11-22 10:55:16,396 Bitcoin Predicition by Linear Regression: 61257.10716521936
+2021-11-22 10:55:16,476 Bitcoin Predicition by Random Forest: 62560.85648448349
+2021-11-22 10:55:16,484 Bitcoin Predicition by Ridge Regression: 61324.111391223
+2021-11-22 10:55:16,495 Mean Bitcoin prediction: 61714.02501364195
+2021-11-22 10:55:16,600 Cardano Predicition by Linear Regression: 1.9205336029396054
+2021-11-22 10:55:16,603 Cradano Predicition by Random Forrest: 1.98000271249583
+2021-11-22 10:55:16,606 Cardano Predicition by Ridge Regression: 1.8926909902557443
+2021-11-22 10:55:16,615 Mean cardano Predicition : 1.9310757685637265
+2021-11-22 10:55:16,721 Ethereum Predicition by Linear Regression: 4386.322593972479
+2021-11-22 10:55:16,725 Ethereum Predicition by Random Forrest: 4405.11816039162
+2021-11-22 10:55:16,727 Ethereum Predicition by Ridge Regression: 4386.812305055434
+2021-11-22 10:55:16,734 Mean Ethereum Predicition : 4392.751019806511
+2021-11-22 10:55:16,854 Dogecoin Predicition by Linear Regression: 0.24180326890493678
+2021-11-22 10:55:16,859 Dogecoin Predicition by Random Forrest: 0.23669370069003673
+2021-11-22 10:55:16,864 Dogecoin Predicition by Ridge Regression: 0.164788420293187
+2021-11-22 10:55:16,872 Mean Dogecoin Predicition : 0.2144284632960535
+2021-11-22 10:55:16,991 Ripple Predicition by Linear Regression: 1.0953303137034942
+2021-11-22 10:55:16,998 Ripple Predicition by Random Forrest: 1.115508070138907
+2021-11-22 10:55:17,000 Ripple Predicition by Ridge Regression: 1.0421226054910337
+2021-11-22 10:55:17,009 Mean Ripple Predicition : 1.0843203297778117
+2021-11-22 10:55:17,040  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2021-11-22 10:55:17,040  * Running on http://192.168.0.59:5000/ (Press CTRL+C to quit)
+2021-11-22 10:55:33,510 127.0.0.1 - - [22/Nov/2021 10:55:33] "GET /bitcoin HTTP/1.1" 200 -
+2021-11-22 10:55:33,543 127.0.0.1 - - [22/Nov/2021 10:55:33] "[36mGET /static/css/stylesheet.css HTTP/1.1[0m" 304 -
+2021-11-22 10:55:33,545 127.0.0.1 - - [22/Nov/2021 10:55:33] "[36mGET /static/bitcoin.png HTTP/1.1[0m" 304 -
+2021-11-22 10:55:48,846 127.0.0.1 - - [22/Nov/2021 10:55:48] "GET /ethereum HTTP/1.1" 200 -
+2021-11-22 10:55:48,900 127.0.0.1 - - [22/Nov/2021 10:55:48] "[36mGET /static/ethereum.png HTTP/1.1[0m" 304 -
+2021-11-22 10:55:48,901 127.0.0.1 - - [22/Nov/2021 10:55:48] "[36mGET /static/css/stylesheet.css HTTP/1.1[0m" 304 -
+2021-11-22 10:55:52,909 127.0.0.1 - - [22/Nov/2021 10:55:52] "GET /cardano HTTP/1.1" 200 -
+2021-11-22 10:55:52,940 127.0.0.1 - - [22/Nov/2021 10:55:52] "[36mGET /static/css/stylesheet.css HTTP/1.1[0m" 304 -
+2021-11-22 10:55:52,971 127.0.0.1 - - [22/Nov/2021 10:55:52] "[36mGET /static/cardano.png HTTP/1.1[0m" 304 -
+2021-11-22 10:55:58,218 127.0.0.1 - - [22/Nov/2021 10:55:58] "GET /dogecoin HTTP/1.1" 200 -
+2021-11-22 10:55:58,247 127.0.0.1 - - [22/Nov/2021 10:55:58] "[36mGET /static/css/stylesheet.css HTTP/1.1[0m" 304 -
+2021-11-22 10:55:58,250 127.0.0.1 - - [22/Nov/2021 10:55:58] "[36mGET /static/dogecoin.png HTTP/1.1[0m" 304 -
+2021-11-22 10:56:06,516 127.0.0.1 - - [22/Nov/2021 10:56:06] "GET /ripple HTTP/1.1" 200 -
+2021-11-22 10:56:06,546 127.0.0.1 - - [22/Nov/2021 10:56:06] "[36mGET /static/css/stylesheet.css HTTP/1.1[0m" 304 -
+2021-11-22 10:56:06,582 127.0.0.1 - - [22/Nov/2021 10:56:06] "[36mGET /static/ripple.png HTTP/1.1[0m" 304 -
+2021-11-22 10:58:07,129 127.0.0.1 - - [22/Nov/2021 10:58:07] "GET /home HTTP/1.1" 200 -
+2021-11-22 10:58:07,153 127.0.0.1 - - [22/Nov/2021 10:58:07] "[36mGET /static/css/stylesheet.css HTTP/1.1[0m" 304 -

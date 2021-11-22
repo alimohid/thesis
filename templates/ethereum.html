@@ -34,8 +34,28 @@
     title: {
       display: true,
       text: 'Ethereum Price'
-    }
+    },
+    scales: {
+        xAxes: [ {
+            ticks: {
+                maxTicksLimit: 20
+            },
+            display: true,
+            type: 'time',
+            time: {
+              parser: 'MM/DD/YYYY HH:mm',
+              tooltipFormat: 'll HH:mm',
+              unit: 'day',
+              unitStepSize: 1,
+              displayFormats: {
+                'day': 'MM/DD/YYYY'
+              }
+            }
+          }
+        ]
+      }
   }
+  
 });
     </script>
 <div class = "mydiv">
