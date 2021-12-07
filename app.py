@@ -37,6 +37,6 @@ def ripple():
     values = cg.xrpDataFrame['Price'].values.tolist()
     return render_template('ripple.html',title='Ripple', var = main.xrp_prediction_list,labels=labels,values=values)    
 if __name__ == '__main__':
-    #from os import environ
-    #app.run(host="0.0.0.0",debug=False, port=environ.get("PORT", 5000))
-    app.run(debug=True)
+    from os import environ
+    app.run(host="0.0.0.0",debug=False, port=environ.get("PORT", 5000))
+    #app.run(debug=True)
