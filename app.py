@@ -14,7 +14,8 @@ def home():
 def bitcoin():
     labels = cg.bitcoinDataFrame['TimeStamp'].values.tolist()
     values = cg.bitcoinDataFrame['Price'].values.tolist()
-    return render_template('bitcoin.html',title='Bitcoin',var = main.bitcoin_prediction_list,labels=labels,values=values)
+    values2 = main.bitcoin_complete_prediction_list
+    return render_template('bitcoin.html',title='Bitcoin',var = main.bitcoin_prediction_list,labels=labels,values=values,values2=values2)
 @app.route("/ethereum")
 def ethereum():
     labels = cg.ethereumDataFrame['TimeStamp'].values.tolist()
@@ -36,5 +37,6 @@ def ripple():
     values = cg.xrpDataFrame['Price'].values.tolist()
     return render_template('ripple.html',title='Ripple', var = main.xrp_prediction_list,labels=labels,values=values)    
 if __name__ == '__main__':
-    from os import environ
-    app.run(host="0.0.0.0",debug=False, port=environ.get("PORT", 5000))
+    #from os import environ
+    #app.run(host="0.0.0.0",debug=False, port=environ.get("PORT", 5000))
+    app.run(debug=True)

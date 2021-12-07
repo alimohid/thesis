@@ -19,6 +19,12 @@ class linear_regression:
         return r2_score(self.y_test,self.pred)
     def predict_for_tomorrow(self):
         return mean(self.regressor.predict(self.dataframe_for_prediction))
+    def complete_prediction(self):
+        prediction_list = []
+        for i in self.dataframe.index:
+            df = cg.convert_to_dataframe_for_prediction(self.dataframe["TimeStamp"][i],self.dataframe["MAmonth"][i],self.dataframe["MAweek"][i])
+            prediction_list.append(mean(self.regressor.predict(df)))
+        return prediction_list 
     def get_cofficients(self):
         return self.regressor.coef_
     def get_intercept(self):
