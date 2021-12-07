@@ -1,1 +1,13 @@
 2021-12-07 16:31:05,049 Date and time for prediction: 2021-12-07 01:00:00
+2021-12-07 16:31:09,242 Bitcoin Predicition by Linear Regression: 55869.493539978605
+2021-12-07 16:31:09,298 Bitcoin Predicition by Random Forest: 54479.42880684725
+2021-12-07 16:31:09,304 Bitcoin Predicition by Ridge Regression: 55709.91268563782
+2021-12-07 16:31:09,310 Mean Bitcoin prediction: 55352.945010821226
+2021-12-07 16:31:09,387 Cardano Predicition by Linear Regression: 1.5808811557741123
+2021-12-07 16:31:09,391 Cradano Predicition by Random Forrest: 1.534867815679019
+2021-12-07 16:31:09,394 Cardano Predicition by Ridge Regression: 1.6139824057290542
+2021-12-07 16:31:09,402 Mean cardano Predicition : 1.576577125727395
+2021-12-07 16:31:09,516 Ethereum Predicition by Linear Regression: 4419.815863811688
+2021-12-07 16:31:09,521 Ethereum Predicition by Random Forrest: 4370.699373756617
+2021-12-07 16:31:09,525 Ethereum Predicition by Ridge Regression: 4409.858698145421
+2021-12-07 16:31:09,536 Mean Ethereum Predicition : 4400.124645237909
