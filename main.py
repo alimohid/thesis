@@ -16,10 +16,10 @@ logger.setLevel(logging.INFO)
 logger.info('Date and time for prediction: {}'.format(datetime.fromtimestamp(cg.timestamp_for_tomorrow/1000)))
 
 bitcoin_prediction_list  = []
-ethereum_prediction_list = []
-cardano_prediction_list = [] 
-xrp_prediction_list = []
-dogecoin_prediction_list = []
+ethereum_prediction_list, ethereum_complete_prediction_list = []
+cardano_prediction_list, cardano_complete_prediction_list = [] 
+xrp_prediction_list, xrp_complete_prediction_list = []
+dogecoin_prediction_list, dogecoin_complete_prediction_list = []
 LR_Bitcoin = lr.linear_regression(cg.bitcoinDataFrame,cg.bitcoinDataFrame_for_predicition)
 LR_Bitcoin.train_for_prediction()
 #print(LR_Bitcoin.predict_for_tomorrow())
@@ -54,7 +54,9 @@ cardano_prediction_list.append(LR_cardano.predict_for_tomorrow())
 cardano_prediction_list.append(RR_cardano.predict_for_tomorrow())
 cardano_prediction_list.append(Ridge_cardano.predict_for_tomorrow())
 cardano_prediction_list.append((Ridge_cardano.predict_for_tomorrow() + LR_cardano.predict_for_tomorrow() + RR_cardano.predict_for_tomorrow())/3)
-
+cardano_complete_prediction_list.append(LR_cardano.complete_prediction())
+cardano_complete_prediction_list.append(RR_cardano.complete_prediction())
+cardano_complete_prediction_list.append(Ridge_cardano.complete_prediction())
 
 LR_ethereum = lr.linear_regression(cg.ethereumDataFrame,cg.ethereumDataFrame_for_predicition)
 LR_ethereum.train_for_prediction()
@@ -70,7 +72,9 @@ ethereum_prediction_list.append(LR_ethereum.predict_for_tomorrow())
 ethereum_prediction_list.append(RR_ethereum.predict_for_tomorrow())
 ethereum_prediction_list.append(Ridge_ethereum.predict_for_tomorrow())
 ethereum_prediction_list.append((Ridge_ethereum.predict_for_tomorrow() + LR_ethereum.predict_for_tomorrow() + RR_ethereum.predict_for_tomorrow())/3)
-
+ethereum_complete_prediction_list.append(LR_ethereum.complete_prediction())
+ethereum_complete_prediction_list.append(RR_ethereum.complete_prediction())
+ethereum_complete_prediction_list.append(Ridge_ethereum.complete_prediction())
 
 LR_dogecoin = lr.linear_regression(cg.dogecoinDataFrame,cg.dogecoinDataFrame_for_prediction)
 LR_dogecoin.train_for_prediction()
@@ -86,7 +90,9 @@ dogecoin_prediction_list.append(LR_dogecoin.predict_for_tomorrow())
 dogecoin_prediction_list.append(RR_dogecoin.predict_for_tomorrow())
 dogecoin_prediction_list.append(Ridge_dogecoin.predict_for_tomorrow())
 dogecoin_prediction_list.append((Ridge_dogecoin.predict_for_tomorrow() + LR_dogecoin.predict_for_tomorrow() + RR_dogecoin.predict_for_tomorrow())/3)
-
+dogecoin_complete_prediction_list.append(LR_dogecoin.complete_prediction())
+dogecoin_complete_prediction_list.append(RR_dogecoin.complete_prediction())
+dogecoin_complete_prediction_list.append(Ridge_dogecoin.complete_prediction())
 
 LR_xrp = lr.linear_regression(cg.xrpDataFrame,cg.xrpDataFrame_for_prediction)
 LR_xrp.train_for_prediction()
@@ -102,3 +108,6 @@ xrp_prediction_list.append(LR_xrp.predict_for_tomorrow())
 xrp_prediction_list.append(RR_xrp.predict_for_tomorrow())
 xrp_prediction_list.append(Ridge_xrp.predict_for_tomorrow())
 xrp_prediction_list.append((Ridge_xrp.predict_for_tomorrow() + LR_xrp.predict_for_tomorrow() + RR_xrp.predict_for_tomorrow())/3)
+xrp_complete_prediction_list.append(LR_xrp.complete_prediction())
+xrp_complete_prediction_list.append(RR_xrp.complete_prediction())
+xrp_complete_prediction_list.append(Ridge_xrp.complete_prediction())
