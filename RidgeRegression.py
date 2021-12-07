@@ -19,6 +19,12 @@ class Ridge_Regression:
         self.ridge_reg.fit(self.x_train,self.y_train)
     def predict_for_tomorrow(self):
         return mean(self.ridge_reg.predict(self.dataframe_for_prediction))
+    def complete_prediction(self):
+        prediction_list = []
+        for i in self.dataframe.index:
+            df = cg.convert_to_dataframe_for_prediction(self.dataframe["TimeStamp"][i],self.dataframe["MAmonth"][i],self.dataframe["MAweek"][i])
+            prediction_list.append(mean(self.ridge_reg.predict(df)))
+        return prediction_list
 
 # x = cg.bitcoinDataFrame[['TimeStamp','MAmonth','MAweek']]
 # y = cg.bitcoinDataFrame.iloc[:,3:].values

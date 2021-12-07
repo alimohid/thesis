@@ -15,7 +15,9 @@ def bitcoin():
     labels = cg.bitcoinDataFrame['TimeStamp'].values.tolist()
     values = cg.bitcoinDataFrame['Price'].values.tolist()
     values2 = main.bitcoin_complete_prediction_list
-    return render_template('bitcoin.html',title='Bitcoin',var = main.bitcoin_prediction_list,labels=labels,values=values,values2=values2)
+    values3 = main.bitcoin_complete_prediction_list2
+    values4 = main.bitcoin_complete_prediction_list3
+    return render_template('bitcoin.html',title='Bitcoin',var = main.bitcoin_prediction_list,labels=labels,values=values,values2=values2,values3=values3,values4=values4)
 @app.route("/ethereum")
 def ethereum():
     labels = cg.ethereumDataFrame['TimeStamp'].values.tolist()
