@@ -16,10 +16,14 @@ logger.setLevel(logging.INFO)
 logger.info('Date and time for prediction: {}'.format(datetime.fromtimestamp(cg.timestamp_for_tomorrow/1000)))
 
 bitcoin_prediction_list  = []
-ethereum_prediction_list, ethereum_complete_prediction_list = []
-cardano_prediction_list, cardano_complete_prediction_list = [] 
-xrp_prediction_list, xrp_complete_prediction_list = []
-dogecoin_prediction_list, dogecoin_complete_prediction_list = []
+ethereum_prediction_list  = []
+cardano_prediction_list = [] 
+xrp_prediction_list  = []
+dogecoin_prediction_list = []
+ethereum_complete_prediction_list = []
+cardano_complete_prediction_list = []
+xrp_complete_prediction_list = []
+dogecoin_complete_prediction_list = []
 LR_Bitcoin = lr.linear_regression(cg.bitcoinDataFrame,cg.bitcoinDataFrame_for_predicition)
 LR_Bitcoin.train_for_prediction()
 #print(LR_Bitcoin.predict_for_tomorrow())
