@@ -1,24 +1,2 @@
-2021-12-08 17:32:08,959 Date and time for prediction: 2021-12-08 01:00:00
-2021-12-08 17:32:14,091 Bitcoin Predicition by Linear Regression: 54949.98115730262
-2021-12-08 17:32:21,306 Bitcoin Predicition by Random Forest: 54083.758931716926
-2021-12-08 17:32:26,591 Bitcoin Predicition by Ridge Regression: 54879.94586313873
-2021-12-08 17:32:26,598 Mean Bitcoin prediction: 54637.8953173861
-2021-12-08 17:32:26,671 Cardano Predicition by Linear Regression: 1.5593853259591846
-2021-12-08 17:32:26,675 Cradano Predicition by Random Forrest: 1.5673101844661155
-2021-12-08 17:32:26,677 Cardano Predicition by Ridge Regression: 1.5906263615167051
-2021-12-08 17:32:26,684 Mean cardano Predicition : 1.5724406239806683
-2021-12-08 17:32:39,952 Ethereum Predicition by Linear Regression: 4403.547472876393
-2021-12-08 17:32:39,959 Ethereum Predicition by Random Forrest: 4335.496710739463
-2021-12-08 17:32:39,962 Ethereum Predicition by Ridge Regression: 4399.659586647789
-2021-12-08 17:32:39,975 Mean Ethereum Predicition : 4379.567923421216
-2021-12-08 17:32:55,991 Dogecoin Predicition by Linear Regression: 0.1998999902645072
-2021-12-08 17:32:55,995 Dogecoin Predicition by Random Forrest: 0.20626146316907348
-2021-12-08 17:32:55,996 Dogecoin Predicition by Ridge Regression: 0.1574936219773723
-2021-12-08 17:32:56,003 Mean Dogecoin Predicition : 0.18788502513698432
-2021-12-08 17:33:11,456 Ripple Predicition by Linear Regression: 0.9227119387233308
-2021-12-08 17:33:11,460 Ripple Predicition by Random Forrest: 0.9342967233880084
-2021-12-08 17:33:11,462 Ripple Predicition by Ridge Regression: 0.9085721766191693
-2021-12-08 17:33:11,468 Mean Ripple Predicition : 0.9218602795768361
-2021-12-08 17:33:27,232  * Debugger is active!
-2021-12-08 17:33:27,398  * Debugger PIN: 124-086-371
-2021-12-08 17:33:28,617  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-12-08 17:40:00,139 Date and time for prediction: 2021-12-08 01:00:00
+2021-12-08 17:40:04,329 Bitcoin Predicition by Linear Regression: 54949.98115730262
